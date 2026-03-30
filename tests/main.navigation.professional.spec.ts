@@ -4,7 +4,8 @@
 
 import { test } from "@playwright/test";
 
-test.describe.skip("DEPRECATED – replaced by main.navigation.refactored.spec.ts", () => {
+test.describe
+  .skip("DEPRECATED – replaced by main.navigation.refactored.spec.ts", () => {
   test("placeholder – do not add tests here", async () => {
     // Intentionally empty.
   });

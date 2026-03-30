@@ -8,7 +8,9 @@ export class HomePage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.heading = page.getByRole("heading", { level: 1 });
-    this.exampleLink = page.getByRole("link", { name: /more information/i }).first();
+    this.exampleLink = page
+      .getByRole("link", { name: /more information/i })
+      .first();
   }
 
   async navigateToHome(): Promise<void> {

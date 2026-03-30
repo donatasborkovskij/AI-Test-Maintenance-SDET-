@@ -51,5 +51,4 @@ export class MainPage extends BasePage {
     await Promise.all([this.page.waitForURL(expectedUrl), link.click()]);
     await expect(this.page).toHaveURL(expectedUrl);
   }
-
 }
